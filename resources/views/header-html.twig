@@ -1,0 +1,19 @@
+<!doctype html>
+<html {{ site.language_attributes }}>
+    <head>
+        <title>
+            {% if wp_title %}
+                {{ wp_title }}
+                -
+                {{ site.name }}
+            {% else %}
+                {{ site.name }}
+            {% endif %}
+        </title>
+        <meta name="description" content="{{ site.description }}">
+        <meta charset="{{ site.charset }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="https://gmpg.org/xfn/11">
+        <link rel="author" href="{{ site.theme.link }}/humans.txt"/>
+
+        {{function('wp_head')}}

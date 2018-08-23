@@ -1,0 +1,15 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+    <header class="entry-header">
+        {% if post.get_thumbnail %}
+            <img src="{{post.thumbnail.src}}"/>
+        {% endif %}
+    </header>
+    <section class="entry-content">
+        <h2 class="entry-title">
+            <a href="{{post.link}}">{{post.title}}</a>
+        </h2>
+        <p>{{post.preview}}</p>
+    </section>
+{% endblock %}

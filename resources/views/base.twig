@@ -1,0 +1,59 @@
+{% block html_head_container %}
+
+    {% include 'html-header.twig' %}
+    {% block head %}{% endblock %}
+</head>
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig">
+<a class="skip-link screen-reader-text" href="#content">{{__('Skip to content', text_domain) }}</a>
+<header id="masthead" class="site-header">
+    {% block header %}
+        <div class="site-branding">
+            {{function('the_custom_logo')}}
+            {% if home %}
+                {% include 'partials/home-title.twig' %}
+            {% else %}
+                {% include 'partials/site-title.twig' %}
+            {% endif %}
+            {% if preview or site.description %}
+                <p class="site-description">
+                    {{site.description}}
+                </p>
+            {% endif %}
+
+        </div>
+        <!-- .site-branding -->
+        <nav id="site-navigation" class="main-navigation nav-collapse" role="navigation">
+            <button class="menu-toggle nav-toggle" aria-controls="primary-menu" aria-expanded="false">{{__( 'Primary Menu', text_domain )}}</button>
+            {% include "menu.twig" with {
+                'menu' : menu.get_items
+            } %}
+
+        </nav>
+        <!-- #nav -->
+    {% endblock %}
+</header>
+<!-- #masthead -->
+<main id="primary" role="main" class="site-main">
+    {% if title %}
+        <header class="page-header"></header>
+        <h1 class="page-title">
+            {{title}}
+        </h1>
+    {% endif %}
+    {% block content %}
+        Sorry, no content
+    {% endblock %}
+</main>
+<!-- #main -->
+{% block footer %}
+    <footer id="colophon" class="site-footer">
+        {% include 'footer.twig' %}
+    </footer>
+{% endblock %}
+<!-- footer -->
+
+{{ function('wp_footer') }}
+</body>
+</html>

@@ -1,0 +1,7 @@
+<ul class="sub-menu">
+    {% for item in submenu %}
+        <li class="{{ item.classes | join(' ') }}">
+            <a target="{{ item.target }}" href="{{ item.link }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
