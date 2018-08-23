@@ -27,7 +27,7 @@ class StarterSite extends TimberSite {
      * @return void
      */
     public function add_to_context( $context ) {
-        $context['text_domain'] = 'uchcbronx';
+        $context['text_domain'] = 'monkeytail';
         $context['home']        = is_front_page() || is_home();
         $context['preview']     = is_customize_preview();
         $context['menu']        = new TimberMenu( 'primary-menu' );

@@ -1,4 +1,4 @@
-=== UCHCBronx ===
+=== monkeytail ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called UCHCBronx.
+A starter theme called monkeytail.
 
 == Description ==
 
-Custom Theme for UCHCBRONX
+Custom Theme for monkeytail
 
 == Installation ==
 
@@ -25,7 +25,7 @@ Custom Theme for UCHCBRONX
 
 = Does this theme support any plugins? =
 
-UCHCBronx includes support for Infinite Scroll in Jetpack.
+monkeytail includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

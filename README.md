@@ -9,7 +9,7 @@ Theme requires wordpress local development envionment, [Node](https://nodejs.org
 Getting Started
 ---------------
 
-1. Find all occurrences of 'monkey' and replace them with the new theme name.
+1. Find all occurrences of 'monkeytail' and replace them with the new theme name.
 2. If you don't have yarn installed, install it globally with npm -i -g yarn
 3. Run yarn.
 4. Run yarn dev or yarn watch.

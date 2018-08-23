@@ -10,6 +10,6 @@
  *
  * @return string
  */
-function uchcbronx_get_assets_folder() {
+function monkeytail_get_assets_folder() {
     return get_stylesheet_directory_uri() . '/dist';
 }

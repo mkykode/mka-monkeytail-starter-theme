@@ -21,7 +21,7 @@ add_action(
         add_theme_support(
             'infinite-scroll', array(
                 'container' => 'main',
-                'render'    => 'uchcbronx_infinite_scroll_render',
+                'render'    => 'monkeytail_infinite_scroll_render',
                 'footer'    => 'page',
             )
         );
@@ -33,7 +33,7 @@ add_action(
         add_theme_support(
             'jetpack-content-options', array(
                 'post-details'    => array(
-                    'stylesheet' => 'uchcbronx-style',
+                    'stylesheet' => 'monkeytail-style',
                     'date'       => '.posted-on',
                     'categories' => '.cat-links',
                     'tags'       => '.tags-links',
@@ -53,7 +53,7 @@ add_action(
 /**
  * Custom render function for Infinite Scroll.
  */
-function uchcbronx_infinite_scroll_render() {
+function monkeytail_infinite_scroll_render() {
     while ( have_posts() ) {
         the_post();
         if ( is_search() ) :

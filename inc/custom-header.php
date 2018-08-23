@@ -14,33 +14,33 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses uchcbronx_header_style()
+ * @uses monkeytail_header_style()
  */
 
 add_action(
     'after_setup_theme', function() {
         add_theme_support(
             'custom-header', apply_filters(
-                'uchcbronx_custom_header_args', array(
+                'monkeytail_custom_header_args', array(
                     'default-image'      => '',
                     'default-text-color' => '000000',
                     'width'              => 1000,
                     'height'             => 250,
                     'flex-height'        => true,
-                    'wp-head-callback'   => 'uchcbronx_header_style',
+                    'wp-head-callback'   => 'monkeytail_header_style',
                 )
             )
         );
     }
 );
 
-if ( ! function_exists( 'uchcbronx_header_style' ) ) :
+if ( ! function_exists( 'monkeytail_header_style' ) ) :
     /**
      * Styles the header image and text displayed on the blog.
      *
-     * @see uchcbronx_custom_header_setup().
+     * @see monkeytail_custom_header_setup().
      */
-    function uchcbronx_header_style() {
+    function monkeytail_header_style() {
         $header_text_color = get_header_textcolor();
 
         /*

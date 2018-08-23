@@ -14,10 +14,10 @@ add_action(
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on UCHCBronx, use a find and replace
-         * to change 'uchcbronx' to the name of your theme in all the template files.
+         * If you're building a theme based on monkeytail, use a find and replace
+         * to change 'monkeytail' to the name of your theme in all the template files.
          */
-        load_theme_textdomain( 'uchcbronx', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'monkeytail', get_template_directory() . '/languages' );
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );
@@ -54,7 +54,7 @@ add_action(
         // Set up the WordPress core custom background feature.
         add_theme_support(
             'custom-background', apply_filters(
-                'uchcbronx_custom_background_args', array(
+                'monkeytail_custom_background_args', array(
                     'default-color' => 'ffffff',
                     'default-image' => '',
                 )
@@ -95,6 +95,6 @@ add_action(
         // This variable is intended to be overruled from themes.
         // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-        $GLOBALS['content_width'] = apply_filters( 'uchcbronx_content_width', 640 );
+        $GLOBALS['content_width'] = apply_filters( 'monkeytail_content_width', 640 );
     }, 0
 );

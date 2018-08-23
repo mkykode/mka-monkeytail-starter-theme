@@ -1,10 +1,10 @@
 <?php
 /**
- * UCHCBronx functions and definitions
+ * monkeytail functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package UCHCBronx
+ * @package monkeytail
  */
 
 /**

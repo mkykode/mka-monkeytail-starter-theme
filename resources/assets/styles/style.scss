@@ -1,11 +1,10 @@
 /* --------------------------------------------------------------
->>> TABLE OF CONTENTS:
-
+>>> Defaults
 -------------------------------------------------------------- */
 @import 'vendor/include-media';
 @import 'variables/variables-site';
 @import 'mixins/mixins-master';
-
+@import 'accessibility/screen-reader';
 /* --------------------------------------------------------------
 # Tailwind
 -------------------------------------------------------------- */

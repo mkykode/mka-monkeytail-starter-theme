@@ -1,6 +1,6 @@
 <?php
 /**
- * UCHCBronx Theme Customizer
+ * monkeytail Theme Customizer
  *
  * @package Customizer
  */
@@ -21,20 +21,20 @@ add_action(
             $wp_customize->selective_refresh->add_partial(
                 'blogname', array(
                     'selector'        => '.site-title a',
-                    'render_callback' => 'uchcbronx_customize_partial_blogname',
+                    'render_callback' => 'monkeytail_customize_partial_blogname',
                 )
             );
             $wp_customize->selective_refresh->add_partial(
                 'blogdescription', array(
                     'selector'        => '.site-description',
-                    'render_callback' => 'uchcbronx_customize_partial_blogdescription',
+                    'render_callback' => 'monkeytail_customize_partial_blogdescription',
                 )
             );
         }
 
         $wp_customize->add_section(
             'comments', array(
-                'title'    => __( 'Comments', 'uchcbronx' ),
+                'title'    => __( 'Comments', 'monkeytail' ),
                 'priority' => 300,
             )
         );
@@ -60,7 +60,7 @@ add_action(
  *
  * @return void
  */
-function uchcbronx_customize_partial_blogname() {
+function monkeytail_customize_partial_blogname() {
     bloginfo( 'name' );
 }
 
@@ -69,7 +69,7 @@ function uchcbronx_customize_partial_blogname() {
  *
  * @return void
  */
-function uchcbronx_customize_partial_blogdescription() {
+function monkeytail_customize_partial_blogdescription() {
     bloginfo( 'description' );
 }
 
@@ -80,6 +80,6 @@ function uchcbronx_customize_partial_blogdescription() {
 add_action(
     'customize_preview_init', function () {
 
-        wp_enqueue_script( 'uchcbronx-customizer', uchcbronx_get_assets_folder() . '/scripts/customizer.js', array( 'customize-preview' ), time(), true );
+        wp_enqueue_script( 'monkeytail-customizer', monkeytail_get_assets_folder() . '/scripts/customizer.js', array( 'customize-preview' ), time(), true );
     }
 );
